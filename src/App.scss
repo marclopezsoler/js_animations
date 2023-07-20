@@ -1,0 +1,110 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  overflow-x: hidden;
+  margin: 20px;
+  overflow-y: hidden;
+}
+
+.div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.btn {
+  background-color: black;
+}
+
+section {
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+}
+
+// div:nth-child(1) {
+//   filter: invert(1);
+// }
+
+.figure {
+  width: 250px;
+  height: 250px;
+  background: url("./assets/image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.25s ease-out;
+
+  .fig_caption {
+    opacity: 0;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.667);
+    font-weight: bold;
+    transition: 0.55s cubic-bezier(0.07, 0.46, 0.39, 1);
+  }
+
+  &:hover {
+    .fig_caption {
+      opacity: 1;
+    }
+  }
+}
+
+.content {
+  opacity: 0;
+}
+
+.show {
+  animation: moveDown 0.5s forwards;
+}
+
+@keyframes moveDown {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.p2 {
+  filter: invert(1);
+}
+
+.p3 {
+  width: 90%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.p3_child {
+  padding: 25px;
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 25px;
+  width: 100%;
+}

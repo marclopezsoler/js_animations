@@ -1,0 +1,44 @@
+.card_parent{
+   width: 100%;
+   background-color: red;
+   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px;
+  width: fit-content;
+
+  img {
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+  }
+
+  h2 {
+    color: black;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0px 10px;
+    font-weight: 400;
+    font-size: 44px;
+  }
+}
+
+.large_image{
+  position: absolute;
+  pointer-events: none;
+  z-index: 9999;
+  width: 200px;
+  height: 200px;
+}
